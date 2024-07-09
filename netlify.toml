@@ -1,10 +1,7 @@
-[build]
-  publish = "build/web"
-  command = "bash install_flutter.sh && flutter build web"
-
 [[plugins]]
-  package = "@netlify/plugin-functions-install-node-modules"
-
-[context.production.environment]
-  FLUTTER_HOME = "/opt/buildhome/flutter"
-  PATH = "/opt/buildhome/flutter/bin:/opt/buildhome/flutter/bin/cache/dart-sdk/bin:$PATH"
+package = "netlify-plugin-flutter"
+   [plugins.inputs]
+    channel = "stable"
+[build]
+command = "flutter build web --release"
+publish = "build/web"
