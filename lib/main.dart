@@ -7,6 +7,7 @@ import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project
 import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_cache/home/cache_home_frame.dart';
 import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_cache/indicator/cache_indicator_frame.dart';
 import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_cache/recommend/cache_recommend_frame.dart';
+import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_lift/hire/hire_home_frame.dart';
 import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_lift/home/lift_home_frame.dart';
 import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_lift/signin/signin_frame.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +67,7 @@ class MainApp extends StatelessWidget {
         ),
         GetPage(
           name: '/lift/home',
-          page: () => const LiftHomeScreenFrame(),
+          page: () => const LiftHireScreenFrame(),
           transition: Transition.noTransition,
         ),
       ],
