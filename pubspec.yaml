@@ -1,0 +1,34 @@
+name: kgw_flutter_portfolio
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  animated_text_kit: ^4.2.2
+  carousel_slider: ^4.2.1
+  device_frame: ^1.1.0
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  rflutter_alert: ^2.0.7
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets: 
+    - assets/images/
+  fonts:
+   - family: BM_Jua
+     fonts:
+       - asset: assets/fonts/Font_BM_Jua.ttf
+   - family: Custom_Icons
+     fonts: 
+       - asset: assets/fonts/Custom_Icons.ttf

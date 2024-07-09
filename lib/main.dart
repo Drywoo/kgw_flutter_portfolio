@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:kgw_flutter_portfolio/responsiveLayout.dart';
+import 'package:kgw_flutter_portfolio/screens/desktop_view.dart';
+import 'package:kgw_flutter_portfolio/screens/mobile_view.dart';
+import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_ReEd/home/ReEd_home_frame.dart';
+import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_cache/home/cache_home_frame.dart';
+import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_cache/indicator/cache_indicator_frame.dart';
+import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_cache/recommend/cache_recommend_frame.dart';
+import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_lift/home/lift_home_frame.dart';
+import 'package:kgw_flutter_portfolio/widget/desktop_view_widget/project/project_items/project_lift/signin/signin_frame.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      initialRoute: '/',
+      getPages: [
+        GetPage(
+          name: '/',
+          page: () => const ResponsiveLayout(
+            mobileView: MobileView(),
+            desktopView: DesktopView(),
+          ),
+        ),
+        GetPage(
+          name: '/ReEd',
+          page: () => const ReEdHomeScreenFrame(),
+        ),
+        GetPage(
+          name: '/Cache',
+          page: () => const CacheHomeScreenFrame(),
+        ),
+        GetPage(
+          name: '/Cache/Indicator',
+          page: () => const CacheIndicatorFrame(),
+        ),
+        GetPage(
+          name: '/Cache/Recommand',
+          page: () => const CacheRecommendScreenFrame(),
+        ),
+        GetPage(
+          name: '/lift',
+          page: () => const LiftHomeScreenFrame(),
+        ),
+        GetPage(
+          name: '/lift/SignIn',
+          page: () => const LiftSignInScreenFrame(),
+        ),
+        GetPage(
+          name: '/lift/home',
+          page: () => const LiftHomeScreenFrame(),
+        ),
+      ],
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color.fromARGB(255, 243, 243, 243),
+        textTheme: const TextTheme(
+          titleMedium: TextStyle(color: Colors.black, fontSize: 20, fontFamily: 'BM_Jua'), // 기본 제목 텍스트
+          headlineMedium: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold, fontFamily: 'BM_Jua'), // 기본 헤더 텍스트 
+          bodyMedium: TextStyle(color: Colors.black, fontSize: 20, fontFamily: 'BM_Jua'), // 기본 본문 텍스트
+        ),
+      ),
+    );
+  }
+}
