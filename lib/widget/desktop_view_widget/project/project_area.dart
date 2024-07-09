@@ -54,7 +54,7 @@ Widget projectArea() {
             imagePath: 'assets/images/ReEd_Logo.png',
             description1: '학원과 학생의 일정 연결 및 출석 프로젝트',
             description2: '기간: 2023.3 ~ 2023.11',
-            useSkill: 'GetX, Dio, Mvvm',
+            useSkill: 'Swift,Mvvm,Alamofire',
             bannerColor: Color(0xffeb593c),
             bannerText: 'Swift',
           )),
