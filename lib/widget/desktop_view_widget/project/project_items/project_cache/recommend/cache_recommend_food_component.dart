@@ -65,7 +65,7 @@ class TodayFoodInfo extends StatelessWidget {
       children: [
         IconButton(
           onPressed: () {
-          Get.toNamed('/cache');
+          Get.toNamed('/Cache');
         }, icon: Icon(Icons.cancel))
       ],
     );
