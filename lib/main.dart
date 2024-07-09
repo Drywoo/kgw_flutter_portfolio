@@ -37,30 +37,37 @@ class MainApp extends StatelessWidget {
         GetPage(
           name: '/ReEd',
           page: () => const ReEdHomeScreenFrame(),
+          transition: Transition.noTransition,
         ),
         GetPage(
           name: '/Cache',
           page: () => const CacheHomeScreenFrame(),
+          transition: Transition.noTransition,
         ),
         GetPage(
           name: '/Cache/Indicator',
           page: () => const CacheIndicatorFrame(),
+          transition: Transition.noTransition,
         ),
         GetPage(
           name: '/Cache/Recommand',
           page: () => const CacheRecommendScreenFrame(),
+          transition: Transition.noTransition,
         ),
         GetPage(
           name: '/lift',
           page: () => const LiftHomeScreenFrame(),
+          transition: Transition.noTransition,
         ),
         GetPage(
           name: '/lift/SignIn',
           page: () => const LiftSignInScreenFrame(),
+          transition: Transition.noTransition,
         ),
         GetPage(
           name: '/lift/home',
           page: () => const LiftHomeScreenFrame(),
+          transition: Transition.noTransition,
         ),
       ],
       theme: ThemeData(
